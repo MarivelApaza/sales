@@ -1,0 +1,440 @@
+/* ==================================================
+   TEMA ARTESANÍA – CAFÉ & CREMA (STISLA SAFE)
+================================================== */
+
+.artesania-theme {
+
+    /* ===== VARIABLES ===== */
+    --cafe-principal: #7A4A2E;
+    --cafe-oscuro: #5A3321;
+    --crema-claro: #F4EFEA;
+    --crema-medio: #E9DFD3;
+    --texto: #3A2A20;
+
+    --verde: #6B8E23;
+    --rojo: #B84A2B;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.artesania-theme .main-navbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--crema-medio);
+}
+
+.artesania-theme .navbar .nav-link {
+    color: var(--texto);
+    font-weight: 500;
+}
+
+.artesania-theme .navbar .nav-link:hover {
+    color: var(--cafe-principal);
+}
+
+.artesania-theme .navbar .rounded-circle {
+    border: 2px solid var(--crema-medio);
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.artesania-theme .main-sidebar {
+    background: linear-gradient(180deg, var(--cafe-principal), var(--cafe-oscuro));
+}
+
+.artesania-theme .sidebar-brand {
+    background-color: transparent;
+    padding: 18px 0;
+}
+
+.artesania-theme .sidebar-brand img {
+    background: var(--crema-claro);
+    padding: 6px;
+    border-radius: 50%;
+}
+
+/* =========================
+   MENÚ SIDEBAR
+========================= */
+.artesania-theme .sidebar-menu .menu-header {
+    color: var(--crema-medio);
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: .85;
+}
+
+.artesania-theme .sidebar-menu li a {
+    color: var(--crema-claro);
+    font-weight: 500;
+    padding: 10px 18px;
+    margin: 4px 10px;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.artesania-theme .sidebar-menu li a i {
+    color: var(--crema-medio);
+}
+
+.artesania-theme .sidebar-menu li a:hover {
+    background: rgba(255,255,255,.12);
+    transform: translateX(4px);
+}
+
+.artesania-theme .sidebar-menu li.active > a {
+    background: rgba(255,255,255,.18);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* =========================
+   SUBMENÚS
+========================= */
+.artesania-theme .sidebar-menu .dropdown-menu {
+    background-color: rgba(0,0,0,.15);
+    border-left: 3px solid var(--crema-medio);
+}
+
+.artesania-theme .sidebar-menu .dropdown-menu li a {
+    font-size: 13px;
+    padding: 8px 30px;
+    color: var(--crema-claro);
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+.artesania-theme .section,
+.artesania-theme .card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+.artesania-theme .card-statistic-1 {
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.artesania-theme .card-statistic-1 .card-icon {
+    background: var(--crema-medio) !important;
+    color: var(--cafe-principal);
+    border-radius: 14px;
+}
+
+.artesania-theme .card-statistic-1 .card-body {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--texto);
+}
+
+/* =========================
+   TABLAS
+========================= */
+.artesania-theme .table {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.artesania-theme .table thead th {
+    background-color: var(--crema-claro);
+    color: var(--texto);
+    font-size: 13px;
+}
+
+.artesania-theme .table-hover tbody tr:hover {
+    background-color: var(--crema-claro);
+}
+
+/* =========================
+   BOTONES
+========================= */
+.artesania-theme .btn-primary {
+    background-color: var(--cafe-principal);
+    border: none;
+}
+
+.artesania-theme .btn-primary:hover {
+    background-color: var(--cafe-oscuro);
+}
+
+.artesania-theme .btn-success {
+    background-color: var(--verde);
+    border: none;
+}
+
+.artesania-theme .btn-danger {
+    background-color: var(--rojo);
+    border: none;
+}
+
+/* =========================
+   IMÁGENES PRODUCTOS
+========================= */
+.artesania-theme .product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2px solid var(--crema-medio);
+}
+
+/* =========================
+   ALERTAS
+========================= */
+.artesania-theme .alert-success {
+    background-color: #9eb686;
+    border-left: 5px solid var(--verde);
+}
+
+.artesania-theme .alert-danger {
+    background-color: #F9EAE5;
+    border-left: 5px solid var(--rojo);
+}
+
+/* =========================
+   DASHBOARD CARDS COLORES
+========================= */
+.artesania-theme table.dataTable {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Clientes */
+.artesania-theme .card-statistic-1.card-clientes .card-icon {
+    background: linear-gradient(135deg, #A47148, #7A4A2E) !important;
+    color: #fff !important;
+}
+
+/* Productos */
+.artesania-theme .card-statistic-1.card-productos .card-icon {
+    background: linear-gradient(135deg, #E9DFD3, #D6C4AF) !important;
+    color: #5A3321 !important;
+}
+
+/* Compras */
+.artesania-theme .card-statistic-1.card-compras .card-icon {
+    background: linear-gradient(135deg, #D9A441, #B88728) !important;
+    color: #fff !important;
+}
+
+/* Ventas */
+.artesania-theme .card-statistic-1.card-ventas .card-icon {
+    background: linear-gradient(135deg, #6B8E23, #4E6B1A) !important;
+    color: #fff !important;
+}
+
+
+/* Ajustes generales card */
+.artesania-theme .dashboard-card {
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.08);
+    transition: all .25s ease;
+}
+
+.artesania-theme .dashboard-card:hover {
+    transform: translateY(-6px);
+}
+
+.artesania-theme .dashboard-icon {
+    border-radius: 14px;
+    font-size: 26px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================================================
+   COTIZACIÓN – DISEÑO ARTESANÍA
+================================================== */
+
+.artesania-theme .cotizacion-card {
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* =========================
+   INPUTS BUSQUEDA CLIENTE
+========================= */
+.artesania-theme .input-group-text {
+    background-color: var(--color-principal);
+    color: #fff;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.artesania-theme .input-group .form-control {
+    border-radius: 0 10px 10px 0;
+}
+
+/* =========================
+   AUTOCOMPLETE JQUERY UI
+========================= */
+.ui-autocomplete {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--color-claro);
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    padding: 5px 0;
+    z-index: 9999;
+}
+
+.ui-menu-item {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: var(--color-texto);
+}
+
+.ui-menu-item:hover,
+.ui-state-active {
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+    border-radius: 8px;
+}
+
+/* =========================
+   BOTÓN GENERAR (FLOAT)
+========================= */
+.artesania-theme .fixed-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 26px;
+    font-size: 15px;
+    border-radius: 30px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
+    z-index: 1000;
+}
+
+.artesania-theme .fixed-button i {
+    font-size: 16px;
+}
+
+/* =========================
+   TABLAS – ARTESANÍA CHOCO / CREMA
+========================= */
+
+.artesania-theme table.dataTable thead th {
+    background: linear-gradient(135deg, #5A3321, #7A4A2E);
+    color: #fff !important;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+/* Thead flotante DataTables */
+.artesania-theme table.dataTable.fixedHeader-floating thead th {
+    background: linear-gradient(135deg, #4e342e, #6d4c41);
+    color: #fff !important;
+}
+
+.artesania-theme table.dataTable tbody tr:hover {
+    background-color: #f4efe9;
+    transform: translateX(3px);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.03);
+}
+/* Celdas */
+.artesania-theme table.dataTable td {
+    vertical-align: middle;
+    color: #4e342e;
+}
+
+.artesania-theme .dashboard-card {
+    border-radius: 18px !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,.08) !important;
+    transition: transform 0.3s, box-shadow 0.3s !important;
+    padding: 20px !important;
+    background-color: #fff !important;
+}
+
+.artesania-theme .dashboard-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,.12) !important;
+}
+
+.artesania-theme .dashboard-icon {
+    border-radius: 14px !important;
+    font-size: 26px !important;
+    height: 60px !important;
+    width: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.artesania-theme .card-body canvas,
+.artesania-theme #container {
+    border-radius: 12px !important;
+    background-color: #f8f9fc !important;
+    padding: 10px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+/* Card principal */
+.artesania-theme .card {
+    background: #F4EFEA; /* crema claro */
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: none;
+    padding: 20px;
+}
+
+/* Card header */
+.artesania-theme .card-header {
+    background: linear-gradient(135deg, #7A4A2E, #A47148); /* café degradado */
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 14px 14px 0 0;
+    padding: 15px;
+    box-shadow: inset 0 -3px 6px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+.artesania-theme label {
+    color: #5A3321; /* café oscuro */
+    font-weight: 500;
+}
+
+/* Inputs */
+.artesania-theme .form-control {
+    border-radius: 10px;
+    border: 2px solid #E9DFD3; /* crema medio */
+    padding: 10px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.artesania-theme .form-control:focus {
+    border-color: #7A4A2E; /* café principal */
+    box-shadow: 0 0 8px rgba(122, 74, 46, 0.3);
+}
+
+.artesania-theme .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Alertas */
+.artesania-theme .alert-success {
+    background-color: #D9EAD3;
+    border-left: 5px solid #6B8E23; /* verde */
+    color: #3A2A20;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+/* Mejor espaciado entre campos */
+.artesania-theme .form-group {
+    margin-bottom: 20px;
+}
